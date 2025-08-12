@@ -7,7 +7,7 @@ int main() {
     if(score>=80){
         printf("pass");
     }else{
-        printf("%d more socre", 100-score);
+        printf("%d more socre", 80-score);
     }
     return 0;
 }
