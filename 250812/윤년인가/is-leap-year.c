@@ -5,9 +5,9 @@ int main() {
     int y;
     scanf("%d", &y);
     //윤년
-    if(y % 4 == 0){
-        if(y % 100 == 0 && y%400 != 00) printf("false");
-        else printf("true");
-    }
+    if ((y % 4 == 0 && y % 100 != 0) || (y % 400 == 0))
+        printf("true");
+    else
+        printf("false");
     return 0;
 }
